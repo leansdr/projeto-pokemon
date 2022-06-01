@@ -185,6 +185,7 @@ header picture img {
 @media (min-width: 320px) and (max-width: 425px) {
   .overlay {
     position: fixed;
+    top: 50vw;
     width: 100vw;
     height: 100vh;
   }
