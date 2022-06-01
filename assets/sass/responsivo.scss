@@ -1,0 +1,65 @@
+@media (max-width: 375px) {
+  .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    .btn-close {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      width: inherit;
+      img {
+        margin-right: 10px;
+      }
+    }
+    .modal {
+      width: 100vw;
+      height: 120vh;
+      flex-direction: column;
+      border-radius: 0;
+      .modal-imagem {
+        width: inherit;
+        justify-content: center;
+        margin-top: 50px;
+        img {
+          width: 170px;
+          height: 170px;
+        }
+      }
+      .modal-details {
+        .modal-info {
+          flex-direction: column;
+          .status {
+            .link-info {
+              li {
+                padding: 5px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  header {
+    picture {
+      img {
+        width: 300px;
+      }
+    }
+  }
+  nav {
+    .cartoes-pokemon {
+      .cartao-pokemon {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        .number {
+          text-align: right;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
