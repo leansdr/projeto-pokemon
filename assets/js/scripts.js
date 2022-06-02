@@ -24,7 +24,7 @@ btnCloseModal.addEventListener("click", () => {
   }
 });
 
-const url = "https://pokeapi.co/api/v2/pokemon?limit=150/";
+const url = "https://pokeapi.co/api/v2/pokemon/1/";
 
 fetch(url)
   .then((response) => {
