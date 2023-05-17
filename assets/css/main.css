@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ ul {
 }
 
 body {
-  font-family: "Poppins", "sans-serif";
+  font-family: "Roboto", sans-serif;
   background-image: url("../images/bg2.png");
   background-attachment: fixed;
   background-size: cover;
@@ -35,12 +35,12 @@ header picture img {
   transition: all 0.3s ease-out;
   cursor: pointer;
 }
-.cartao-pokemon .number {
+.cartao-pokemon #numero {
   text-align: right;
   display: block;
   margin: 10px 0px;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 20px;
 }
 .cartao-pokemon .cartao-imagem {
   display: flex;
@@ -62,32 +62,89 @@ header picture img {
   justify-content: center;
   align-items: center;
 }
+.cartao-pokemon figcaption #nome {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: bold;
+}
 .cartao-pokemon:hover {
   transform: scale(1.1) !important;
 }
 
-.tipo-eletrico {
-  background-color: #FCC719;
+.electric {
+  background-color: #f8d030;
 }
 
-.tipo-grama {
-  background-color: #49D0B0;
+.grass {
+  background-color: #78c850 !important;
 }
 
-.tipo-fogo {
-  background-color: #ED8A8B;
+.fire {
+  background-color: #f05030;
 }
 
-.tipo-agua {
-  background-color: #76BEFE;
+.water {
+  background-color: #6890f0;
 }
 
-.tipo-trevas {
-  background-color: #BA68C8;
+.bug {
+  background-color: #a8b820;
 }
 
 .tipo-dragao {
-  background-color: #C29791;
+  background-color: #c29791;
+}
+
+.psychic {
+  background-color: #f85888;
+}
+
+.ice {
+  background-color: #98d8d8;
+}
+
+.dragon {
+  background-color: #7038f8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.normal {
+  background-color: #a8a878;
+}
+
+.fighting {
+  background-color: #903028;
+}
+
+/*.flying {
+  background-color: #a890f0;
+}
+*/
+.poison {
+  background-color: #a040a0;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.fairy {
+  background-color: #f9dad9;
 }
 
 .overlay {

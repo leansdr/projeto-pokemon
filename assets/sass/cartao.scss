@@ -3,12 +3,12 @@
   padding: 0px 30px;
   transition: all 0.3s ease-out;
   cursor: pointer;
-  .number {
+  #numero {
     text-align: right;
     display: block;
     margin: 10px 0px;
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 20px;
   }
   .cartao-imagem {
     display: flex;
@@ -24,35 +24,90 @@
       height: 100%;
     }
   }
-  figcaption{
-      min-height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  figcaption {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #nome {
+      text-transform: capitalize;
+      font-size: 22px;
+      font-weight: bold;
+    }
   }
-  &:hover{
-      transform: scale(1.1)!important;
+  &:hover {
+    transform: scale(1.1) !important;
   }
 }
 
-.tipo-eletrico{
-    background-color: #FCC719;
+.electric {
+  background-color: #f8d030;
 }
-.tipo-grama{
-    background-color: #49D0B0;
+.grass {
+  background-color: #78c850 !important;
 }
-.tipo-fogo{
-    background-color: #ED8A8B;
+.fire {
+  background-color: #f05030;
 }
-.tipo-agua{
-    background-color: #76BEFE;
+.water {
+  background-color: #6890f0;
 }
-.tipo-trevas{
-    background-color: #BA68C8;
+.bug {
+  background-color: #a8b820;
 }
-.tipo-dragao{
-    background-color: #C29791;
+.tipo-dragao {
+  background-color: #c29791;
 }
 
+.psychic {
+  background-color: #f85888;
+}
 
+.ice {
+  background-color: #98d8d8;
+}
 
+.dragon {
+  background-color: #7038f8;
+}
+
+.dark {
+  background-color: #705848;
+}
+
+.normal {
+  background-color: #a8a878;
+}
+
+.fighting {
+  background-color: #903028;
+}
+
+/*.flying {
+  background-color: #a890f0;
+}
+*/
+
+.poison {
+  background-color: #a040a0;
+}
+
+.ground {
+  background-color: #e0c068;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.ghost {
+  background-color: #705898;
+}
+
+.steel {
+  background-color: #b8b8d0;
+}
+
+.fairy {
+  background-color: #f9dad9;
+}
