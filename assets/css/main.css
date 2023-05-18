@@ -51,10 +51,15 @@ header picture img {
   height: 200px;
   border-radius: 50%;
   padding: 20px;
+  filter: grayscale(100%);
 }
 .cartao-pokemon .cartao-imagem img {
   width: 100%;
   height: 100%;
+  transition: all 0.3s ease-out;
+}
+.cartao-pokemon .cartao-imagem:hover {
+  filter: grayscale(0%);
 }
 .cartao-pokemon figcaption {
   min-height: 10vh;
@@ -69,6 +74,9 @@ header picture img {
 }
 .cartao-pokemon:hover {
   transform: scale(1.1) !important;
+}
+.cartao-pokemon:hover > .cartao-imagem {
+  filter: grayscale(0%);
 }
 
 .electric {

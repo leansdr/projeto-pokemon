@@ -21,13 +21,6 @@ let containerPokemon = document.querySelector("#container");
 
 //Pegando as informações da API
 const pegarPokemon = async () => {
-  /*
-  const url = `https://pokeapi.co/api/v2/pokemon/1/`;
-  const resp = await fetch(url);
-  const data = await resp.json();
-  console.log(data.types);
-  */
-
   const arrayPokemon = [];
   for (let i = 1; i <= 251; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}/`;
@@ -36,7 +29,7 @@ const pegarPokemon = async () => {
 
     arrayPokemon.push({
       number: data.id,
-      img: data.sprites.other.dream_world.front_default,
+      img: data.sprites.other["official-artwork"].front_default,
       name: data.name,
       tipo: data.types,
     });
@@ -47,7 +40,7 @@ const pegarPokemon = async () => {
 
 //Listando as informações no Front End
 function listarPokemon(pokemons) {
-  pokemons.forEach((pokemon) => {
+  pokemons.map((pokemon) => {
     let card = `<li class="cartao-pokemon ${pokemon.tipo
       .map((item) => " " + item.type.name)
       .toString()
